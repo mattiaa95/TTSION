@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {TextToSpeech} from '@ionic-native/text-to-speech';
+import { AdMobFree } from '@ionic-native/admob-free';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import {TextToSpeech} from '@ionic-native/text-to-speech';
     StatusBar,
     SplashScreen,
     TextToSpeech,
+    AdMobFree,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
