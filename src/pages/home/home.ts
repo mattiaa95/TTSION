@@ -39,8 +39,5 @@ playText() {
     locale: this.locale
   })
 }
-resize() {
-    this.myInput.nativeElement.style.height = this.myInput.nativeElement.scrollHeight + 'px';
-}
 
 }
