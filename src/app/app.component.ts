@@ -13,7 +13,7 @@ export class MyApp {
     platform.ready().then(() => {
       appRate.preferences = {
         displayAppName: 'TTS App',
-        usesUntilPrompt: 5,
+        usesUntilPrompt: 3,
         promptAgainForEachNewVersion: false,
         inAppReview: true,
         storeAppURL: {
@@ -53,7 +53,7 @@ export class MyApp {
   rateApp(){
     setTimeout(() => {
       this.appRate.promptForRating(true);
-    }, 350000);
+    }, 150000);
   }
 }
 
