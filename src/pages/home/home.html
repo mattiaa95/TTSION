@@ -1,11 +1,11 @@
 <ion-content padding>
   <ion-list>
     <ion-item>
-      <ion-textarea id="myInput" maxlength="500" rows="5" placeholder="................................................................."
+      <ion-textarea id="myInput" maxlength="500" rows="5" placeholder="Write something..."
         [(ngModel)]="text"></ion-textarea>
     </ion-item>
     <ion-item>
-      <ion-range min="1" max="80" step="1" [(ngModel)]="rate">
+      <ion-range min="1" max="50" step="1" [(ngModel)]="rate">
         <ion-icon small range-left name="remove"></ion-icon>
         <ion-icon small range-right name="add"></ion-icon>
       </ion-range>

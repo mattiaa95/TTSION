@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {TextToSpeech} from '@ionic-native/text-to-speech';
 import { AdMobFree } from '@ionic-native/admob-free';
+import { AppRate } from '@ionic-native/app-rate';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AdMobFree } from '@ionic-native/admob-free';
     SplashScreen,
     TextToSpeech,
     AdMobFree,
+    AppRate,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
