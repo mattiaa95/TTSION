@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {TextToSpeech} from '@ionic-native/text-to-speech';
 import { AdMobFree } from '@ionic-native/admob-free';
 import { AppRate } from '@ionic-native/app-rate';
+import { Insomnia } from '@ionic-native/insomnia';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AppRate } from '@ionic-native/app-rate';
     StatusBar,
     SplashScreen,
     TextToSpeech,
+    Insomnia,
     AdMobFree,
     AppRate,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
