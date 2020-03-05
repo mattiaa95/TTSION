@@ -31,6 +31,7 @@
     "@ionic/storage": "2.2.0",
     "cordova-admob-sdk": "^0.22.0",
     "cordova-android": "7.1.4",
+    "cordova-ios": "5.1.1",
     "cordova-plugin-admob-free": "^0.25.0",
     "cordova-plugin-apprate": "^1.4.0",
     "cordova-plugin-device": "^2.0.2",
@@ -74,7 +75,8 @@
       "cordova-plugin-insomnia": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }
