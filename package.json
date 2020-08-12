@@ -70,7 +70,9 @@
       },
       "cordova-plugin-apprate": {},
       "cordova-plugin-insomnia": {},
-      "cordova-plugin-ionic-webview": {}
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      }
     },
     "platforms": [
       "android",
