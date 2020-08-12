@@ -17,7 +17,7 @@ export class MyApp {
         promptAgainForEachNewVersion: false,
         inAppReview: true,
         storeAppURL: {
-          ios: '<my_app_id>',
+          ios: 'id1501312978',
           android: 'market://details?id=io.TTS',
           windows: 'ms-windows-store://pdp/?ProductId=<the apps Store ID>',
           blackberry: 'appworld://content/[App Id]/',

@@ -17,6 +17,12 @@ loading: any;
 count: number = 0;
 @ViewChild('myInput') myInput: ElementRef;
 
+addConfigIn: AdMobFreeInterstitialConfig = {
+  id: 'ca-app-pub-8119907816555669/2573815307',
+  isTesting: false,
+  autoShow: false
+};
+
 constructor(private tts: TextToSpeech,public loadingCtrl: LoadingController,private admobFree: AdMobFree, platform: Platform, private insomnia: Insomnia) {
 
   platform.ready().then(() => {
@@ -30,21 +36,17 @@ constructor(private tts: TextToSpeech,public loadingCtrl: LoadingController,priv
   });
 
   this.text = '';
-  this.rate = 1;
+  this.rate = 10;
   this.locale = 'en-US';
 
 }
 
-prepareInter() {
-  const addConfigIn: AdMobFreeInterstitialConfig = {
-    id: 'ca-app-pub-8119907816555669/2573815307',
-    isTesting: false,
-    autoShow: false
-  };
-  this.admobFree.interstitial.config(addConfigIn);
-
-  this.admobFree.interstitial.prepare().then(() => {
-  }).catch(e => alert(e));
+prepareInter() { 
+  this.admobFree.interstitial.config(this.addConfigIn);
+  this.admobFree.interstitial.prepare()
+  this.admobFree.on('admob.interstitial.events.CLOSE').subscribe(() => {
+    this.admobFree.interstitial.prepare()
+  });
 }
 
 bannerad() {
